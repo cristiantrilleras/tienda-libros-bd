@@ -1,0 +1,21 @@
+.increment{
+  padding: 10px 10px;
+}
+
+.price{
+  color: greenyellow;
+}
+
+.remove{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

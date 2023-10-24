@@ -1,0 +1,71 @@
+/* App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.book {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.cart {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  
+}
+
+.title{
+  text-decoration: underline;
+  font-family: serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  color: white;     
+
+}
+
+.subCart{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.logo{
+  height: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5733; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #ff351d; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+.numcart{
+  font-size: large;
+}

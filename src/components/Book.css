@@ -1,0 +1,26 @@
+.book{
+  width: 500px;
+}
+
+.imagen{
+  height: 300px;
+  
+}
+
+.imagen:hover{-webkit-transform:scale(1.3);transform:scale(0.9);}
+
+
+.stock{
+  color: green
+}
+
+.descripcion{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.addtocart{
+  margin-right: 5px;
+}
