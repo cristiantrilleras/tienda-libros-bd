@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import BookList from "./components/BookList";
+import BookList from "./components/Booklist";
 import Cart from "./components/Cart";
 import { Routes, Route, Link } from 'react-router-dom';
 import axios from 'axios';
