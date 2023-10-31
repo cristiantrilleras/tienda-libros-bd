@@ -1,5 +1,6 @@
 /* App.css */
 .App {
+  min-height: 100vh;
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -12,14 +13,14 @@
   padding: 10px;
   margin: 10px;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .cart {
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
-  display: inline-block;
-  
+  display: inline-block;  
 }
 
 .title{
