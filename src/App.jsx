@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import BookList from "./components/Booklist";
-import Cart from "./components/Cart";
+import BookList from "./components/Booklist/Booklist";
+import Cart from "./components/Cart/Cart";
 import { Routes, Route, Link } from 'react-router-dom';
-import axios from 'axios';
 
 
 
@@ -35,7 +34,8 @@ function App() {
 
   const updateQ = (title, isIncrement) => {
     const actual = cart.find(el => el.title == title)
-    if(actual.stock <= actual.quantity && isIncrement) return;
+    console.log(actual);
+    if((actual.stock <= actual.quantity && isIncrement)  || (actual.quantity < 1 && !isIncrement) ) return;
     setCart(
       cart.map((item) =>
         item.title === title
@@ -51,8 +51,7 @@ function App() {
   return (
 
 
-    <>
-      <div className="App">
+    <div className="App">
         <Link to="/">
         <h1 className="title">Harry Potter Book Store</h1>
         </Link>
@@ -89,7 +88,6 @@ function App() {
           removeFromCart={removeFromCart}
         /> */}
       </div>
-    </>
   );
 }
 

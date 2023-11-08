@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Book.css'
+import '../Book/Book.css'
 
 function Book({ title, author, price, image, stock, addToCart }) {
   const [quantity, setQuantity] = useState(0);

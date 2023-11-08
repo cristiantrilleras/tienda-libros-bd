@@ -47,19 +47,6 @@ app.get("/productos", (req, res) => {
   });
 });
 
-// Ruta para agregar un nuevo producto
-// router.post('/products', (req, res) => {
-//   const { title, stock, price } = req.body;
-//   const query = 'INSERT INTO productos (title, stock, price) VALUES (?, ?, ?)';
-//   connection.query(query, [title, stock, price], (error, result) => {
-//     if (error) {
-//       console.error('Error al agregar producto:', error);
-//       res.status(500).json({ error: 'Error al agregar producto' });
-//     } else {
-//       res.json({ message: 'Producto agregado exitosamente' });
-//     }
-//   });
-// });
 
 app.listen(port, () => {
   console.log(`Servidor en ejecución en el puerto ${port}`);

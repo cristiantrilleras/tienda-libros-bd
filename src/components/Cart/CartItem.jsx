@@ -16,6 +16,7 @@ function CartItem({
     if (quantitySpan.current.value > stock) {
       quantitySpan.current.value = stock;
     }
+   
   }
 
   return (

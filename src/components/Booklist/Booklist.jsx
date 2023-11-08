@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Book from './Book';
+import Book from '../Book/Book';
+
 
 function  BookList({ addToCart }) {
   const [books, setBooks] = useState([]);
