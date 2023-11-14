@@ -1,6 +1,9 @@
 import React from "react";
 import CartItem from "./CartItem";
 import "./Cart.css";
+import Swal from 'sweetalert2'
+
+
 
 function Cart({ cart, removeFromCart, updateQuantity, setCart }) {
   const getTotal = () => {
@@ -8,7 +11,7 @@ function Cart({ cart, removeFromCart, updateQuantity, setCart }) {
   };
 
   const checkout = () => {
-    alert("Gracias por tu compra. Tu pedido se ha realizado con éxito.");
+    
     cart.forEach((element) => {
       fetch(
         `http://localhost:10101/removequantity?id=${element.id}&&quantity=${element.quantity}`, {
@@ -19,6 +22,13 @@ function Cart({ cart, removeFromCart, updateQuantity, setCart }) {
         .then((data) => console.log(data));
     });
     setCart([]); // Vacía el carrito
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Compra realizada con exito!",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
   return (
